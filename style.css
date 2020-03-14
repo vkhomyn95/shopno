@@ -856,7 +856,7 @@ input[type=checkbox]:checked + label:before{
         margin-top: 50vw;
     }
 }
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
     .navbar-brand {
         padding-top: 1rem !important;
         padding-left: 5%;
@@ -865,5 +865,33 @@ input[type=checkbox]:checked + label:before{
         margin-right: 5%;
         margin-top: 1rem;
         border: none !important;
+    }
+    #s1:checked ~ #slide1, #s2:checked ~ #slide2,
+    #s3:checked ~ #slide3, #s4:checked ~ #slide4,
+    #s5:checked ~ #slide5 {
+        box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+        transform: translate3d(0,-15px,0);
+        height: 170%;
+    }
+    #sl1:checked ~ #sld1, #sl2:checked ~ #sld2,
+    #sl3:checked ~ #sld3, #sl4:checked ~ #sld4,
+    #sl5:checked ~ #sld5 {
+        box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+        transform: translate3d(0,-15px,0);
+        height: 170%;
+        filter: grayscale(100%);
+    }
+    .main-text-preview {
+        font-size: 2em;
+    }
+    #slider label {
+        margin: 0 10px;
+        height: 150%;
+        width: 190%;
+    }
+    #slider-2 label {
+        margin: 0 30px;
+        height: 150%;
+        width: 190%;
     }
 }
